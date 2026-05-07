@@ -1,4 +1,29 @@
-import neat, pygame, os
+import pygame, neat, os, random
+
+# Window settings
+WIN_W = 500
+WIN_H = 800
+FPS   = 30
+
+pygame.init()
+WIN = pygame.display.set_mode((WIN_W, WIN_H))
+pygame.display.set_caption("Flappy Bird NEAT")
+CLOCK = pygame.time.Clock()
+
+# Load your PNG images from the imgs/ folder
+PATH = os.path.join(os.path.dirname(__file__), "imgs")
+
+BIRD_IMG = pygame.transform.scale2x(
+    pygame.image.load(os.path.join(PATH, "bird.png")))
+
+PIPE_IMG = pygame.transform.scale2x(
+    pygame.image.load(os.path.join(PATH, "pipe.png")))
+
+BG_IMG = pygame.transform.scale(
+    pygame.image.load(os.path.join(PATH, "bg.png")),
+    (WIN_W, WIN_H))  # stretch bg to fill window
+
+FONT = pygame.font.SysFont("comicsans", 30)
 
 # 1. Load NEAT config from your file
 def run_neat(config_path):
