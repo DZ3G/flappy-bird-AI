@@ -1,0 +1,33 @@
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 100    # Stop when a bird scores 100
+pop_size              = 50     # 50 birds per generation
+reset_on_extinction   = False
+
+[DefaultGenome]
+# Inputs: bird Y, top pipe Y, bottom pipe Y
+num_inputs            = 3
+num_outputs           = 1      # 1 output: jump or not
+num_hidden            = 0      # Start with no hidden layers
+
+activation_default    = tanh
+activation_mutate_rate = 0.0
+activation_options    = tanh
+
+# How fast the network changes (mutation rates)
+conn_add_prob         = 0.5
+conn_delete_prob      = 0.5
+node_add_prob         = 0.2
+node_delete_prob      = 0.2
+
+weight_mutate_rate    = 0.8
+weight_replace_rate   = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3.0
+
+[DefaultStagnation]
+max_stagnation        = 20
+
+[DefaultReproduction]
+elitism               = 2
