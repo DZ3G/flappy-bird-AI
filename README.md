@@ -1,9 +1,5 @@
-# 🐦 Flappy Bird AI — Tutoriel Complet en Français
+# 🐦 Flappy Bird AI 
 
-> **Pour qui ?** Ce tutoriel est écrit pour quelqu'un qui commence en programmation.
-> Chaque étape est expliquée simplement, sans rien sauter.
-
----
 
 ## 📋 Table des matières
 
