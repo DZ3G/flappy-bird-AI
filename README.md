@@ -2,6 +2,8 @@
 
 I built an AI that teaches itself to play Flappy Bird. It starts out terrible — the birds fly straight into the first pipe — and after about 10 generations one of them figures it out and just... never dies. It's genuinely cool to watch.
 
+![My GIF](assets/flappy.gif)
+
 ---
 
 ## Table of Contents
